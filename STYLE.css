@@ -81,11 +81,11 @@ li a:hover{
 
 /*footer styles*/
 footer{
-    margin-top:3620px;
+    margin-top:4930px;
     background-color:#333;
     color:white;
     text-align:center;
-    padding:20px;
+    padding:10px;
 }
 .social-media img{
    height:20px;
@@ -120,8 +120,7 @@ row-gap:10px;
   height:auto;
   object-fit:cover;
   object-position:center;
-  
-  }
+ }
   * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
 .mySlides {display: none;}
@@ -157,16 +156,26 @@ img {vertical-align: middle;}
   position: relative;
   max-width: 800px;
   margin: 0 auto;
+  overflow:hidden;
+  border: 6px solid #fff;
 }
 .parent img {
   vertical-align: middle;
+  filter: grayscale(100%);
+  transition:0.5s ease;
+  cursor: pointer;
 }
 .parent .text {
   position: absolute;
+  text-align: center;
   bottom: 0;
   background: rgb(0, 0, 0);/* Fallback color */
-  background: rgba(0, 0, 0, 0.5);/* Black background with opacity */
+  background: rgba(0, 0, 0,0.1);/* Black background with opacity */
   color: #ffffff;
   width: 100%;
   padding: 20px;
+}
+.parent img:hover{
+  transform:scale(1.2);
+  filter:grayscale(0%);
 }
